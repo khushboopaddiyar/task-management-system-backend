@@ -1,5 +1,5 @@
 import { config } from 'dotenv'
-import express, { Application, Request, Response } from 'express'
+import express, { Application } from 'express'
 
 config()
 
