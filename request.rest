@@ -1,0 +1,16 @@
+GET http://localhost:5000
+
+
+### Check Server Status
+GET http://localhost:5000/api
+
+
+###
+GET http://localhost:5000/api/users
+
+
+###
+GET http://localhost:5000/api/todos
+
+
+###
