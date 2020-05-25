@@ -1,6 +1,6 @@
 # task-management-system-backend
 
-### Install Dependencies
+## Install Dependencies
 ```
 npm i
 ```
@@ -17,7 +17,7 @@ cp .env.example .env
 copy .env.example .env
 ```
 
-#### Now set the values for variables in .env file
+### Now set the values for variables in .env file
 
 `For Example`
 ```
@@ -27,24 +27,24 @@ MONGODB_URL=mongodb+srv://username:password@cluster0-drwrt.mongodb.net/taskManag
 JWT_SECRET=secret
 ```
 
-*You can also set these values in environment variables*
+*You can also set these values in environment variables.*
 
-### Run the Development Server
+## Run the Development Server
 ```
 npm run dev
 ```
 
-### Build and Start the Server
+## Build and Start the Server
 ```
 npm start
 ```
 
-### Build the project
+## Build the project
 ```
 npm run build
 ```
 
-### Run the Production Server
+## Run the Production Server
 ```
 npm run prod
 ```
