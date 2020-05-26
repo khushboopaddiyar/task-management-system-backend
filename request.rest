@@ -13,4 +13,52 @@ GET http://localhost:5000/api/users
 GET http://localhost:5000/api/todos
 
 
+### Register User / SignUp
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "Test User",
+    "email": "test@test.com",
+    "password": "test"
+}
+
+
+### Login User / SignIn
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "test"
+}
+
+
+### Get User Profile
+GET http://localhost:5000/api/users/profile
+Authorization: 
+
+
+### Update User Profile
+PATCH http://localhost:5000/api/users/profile
+Authorization: 
+Content-Type: application/json
+
+{
+    "name": "Test Name",
+    "email": "test@test.com"
+}
+
+
+### Update User Password / Change User Password
+PATCH http://localhost:5000/api/users/password
+Authorization: 
+Content-Type: application/json
+
+{
+    "oldPassword": "test",
+    "newPassword": "password"
+}
+
+
 ###
