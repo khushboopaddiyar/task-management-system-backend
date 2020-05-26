@@ -1,9 +1,14 @@
 # task-management-system-backend
 
+**Here's the frontend Repository Url**
+<https://github.com/khushboopaddiyar/task-management-system-frontend>
+
 ## Install Dependencies
 ```
 npm i
 ```
+
+**You will need MongoDB locally installed or you can also use MongoDB Atlas**
 
 ## Setup .env file
 
@@ -27,6 +32,7 @@ MONGODB_URL=mongodb+srv://username:password@cluster0-drwrt.mongodb.net/taskManag
 JWT_SECRET=secret
 ```
 
+*Use your own MongoDB Url*
 *You can also set these values in environment variables.*
 
 ## Run the Development Server
