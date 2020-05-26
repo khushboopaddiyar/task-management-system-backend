@@ -24,7 +24,9 @@
     },
     "homepage": "https://github.com/ejekanshjain/task-management-system-backend#readme",
     "devDependencies": {
+        "@types/bcryptjs": "^2.4.2",
         "@types/express": "^4.17.6",
+        "@types/jsonwebtoken": "^8.5.0",
         "@types/mongoose": "^5.7.21",
         "@types/node": "^14.0.5",
         "nodemon": "^2.0.4",
