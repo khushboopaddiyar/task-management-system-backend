@@ -3,7 +3,9 @@ import { Schema, model, Document } from 'mongoose'
 interface IUser extends Document {
     name: string,
     email: string,
-    password: string
+    password: string,
+    createdAt: Date,
+    updatedAt: Date
 }
 
 const UserSchema: Schema = new Schema({

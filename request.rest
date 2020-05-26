@@ -10,7 +10,7 @@ GET http://localhost:5000/api/users
 
 
 ###
-GET http://localhost:5000/api/todos
+GET http://localhost:5000/api/tasks
 
 
 ### Register User / SignUp

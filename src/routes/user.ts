@@ -30,7 +30,9 @@ router.post('/register', async (req: Request, res: Response) => {
                 user: {
                     _id: user._id,
                     name: user.name,
-                    email: user.email
+                    email: user.email,
+                    createdAt: user.createdAt,
+                    updatedAt: user.updatedAt
                 }
             },
             token
@@ -62,7 +64,9 @@ router.post('/login', async (req: Request, res: Response) => {
                 user: {
                     _id: user._id,
                     name: user.name,
-                    email: user.email
+                    email: user.email,
+                    createdAt: user.createdAt,
+                    updatedAt: user.updatedAt
                 }
             },
             token
@@ -87,7 +91,9 @@ router.get('/profile', async (req: Request, res: Response) => {
                 profile: {
                     _id: user._id,
                     name: user.name,
-                    email: user.email
+                    email: user.email,
+                    createdAt: user.createdAt,
+                    updatedAt: user.updatedAt
                 }
             }
         })
