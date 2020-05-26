@@ -1,5 +1,14 @@
 import { Schema, model, Document } from 'mongoose'
 
+interface ITask extends Document {
+    description: string,
+    dueDate: Date,
+    label: String,
+    status: number,
+    createdAt: Date,
+    updatedAt: Date
+}
+
 interface IUser extends Document {
     name: string,
     email: string,
@@ -7,6 +16,27 @@ interface IUser extends Document {
     createdAt: Date,
     updatedAt: Date
 }
+
+const TaskSchema = new Schema({
+    description: {
+        type: String,
+        required: true
+    },
+    label: {
+        type: String,
+        default: null
+    },
+    dueDate: {
+        type: Date,
+        required: true
+    },
+    status: {
+        type: Number,
+        default: 0
+    }
+}, {
+    timestamps: true
+})
 
 const UserSchema: Schema = new Schema({
     name: {
