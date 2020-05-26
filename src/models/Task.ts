@@ -1,7 +1,12 @@
 import { Schema, model, Document } from 'mongoose'
 
+// STATUS FLAGS
+// 0 - New
+// 1 - Doing
+// 2 - Completed
+
 interface ITask extends Document {
-    user: String,
+    user: any,
     description: string,
     label: String,
     dueDate: Date,
@@ -22,7 +27,7 @@ const TaskSchema = new Schema({
     },
     label: {
         type: String,
-        default: null
+        required: true
     },
     dueDate: {
         type: Date,

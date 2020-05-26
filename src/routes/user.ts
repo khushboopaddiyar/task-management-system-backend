@@ -7,10 +7,6 @@ import authUserToken from '../helper/authUserToken'
 
 const router: Router = Router()
 
-router.get('/', (req: Request, res: Response) => {
-    res.json({ success: true, message: "/users route" })
-})
-
 router.post('/register', async (req: Request, res: Response) => {
     try {
         const { name, email, password } = req.body
