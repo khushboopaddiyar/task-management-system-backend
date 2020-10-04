@@ -22,7 +22,7 @@ cp .env.example .env
 copy .env.example .env
 ```
 
-### Now set the values for variables in .env file
+### Now set the values for variables in .env  file
 
 `For Example`
 ```
